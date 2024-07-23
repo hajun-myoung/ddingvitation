@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,15 +13,146 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+html {
+  font-size: 32px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  font-size: 1rem;
+}
+
+#bell-icon {
+  font-size: 4rem;
+  color: #000;
+  background-color: #fff;
+}
+
+.centralized {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.wrapper {
+  width: 100vw;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.absolute-wrapper {
+  position: relative;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.flexColumn {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+#header {
+  height: 7.5vh;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 4px;
+}
+
+#header > p {
+  font-size: 0.8rem;
+  color: gray;
+  font-family: Pretendard, Arial, sans-serif;
+  font-weight: 800;
+}
+
+#homepage .title {
+  margin-bottom: 20px;
+}
+
+#homepage .title h1 {
+  font-size: 1.4rem;
+  font-family: Pretendard, Arial, sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#homepage .description p {
+  font-size: 0.65rem;
+  font-family: Pretendard, Arial, sans-serif;
+  font-weight: 600;
+}
+
+#second-section {
+  position: relative;
+  box-sizing: border-box;
+}
+
+#second-section .section-wrapper {
+  margin-top: 32px;
+  background-color: rgb(55, 61, 81);
+  transform: skewY(-5deg);
+  height: 100px;
+}
+
+#second-section .contents {
+  position: absolute;
+  top: 40px;
+  background-color: rgb(55, 61, 81);
+}
+
+#second-section .contents .title {
+  color: #fff;
+  font-size: 0.9rem;
+  font-family: Pretendard, Arial, sans-serif;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+#second-section .contents .body {
+  color: #fff;
+  font-size: 0.6rem;
+  font-family: Pretendard, Arial, sans-serif;
+  font-weight: 400;
+}
+
+#second-section .contents .map-image {
+  width: 80%;
+  aspect-ratio: 1;
+  background-color: gray;
+  border-radius: 15px;
+  margin-bottom: 4px;
+}
+
+#second-section .contents .comment-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 80%;
+}
+
+#second-section .contents .comment {
+  font-size: 0.4rem;
+  color: #fff;
+}
+
+#homepage #welcome-section .button {
+  width: 40%;
+  aspect-ratio: 3;
+  line-height: 1;
+  font-size: 0.5rem;
+  padding: 0px 0px;
+  margin-top: 12px;
 }
