@@ -14,7 +14,7 @@
 }
 
 html {
-  font-size: 32px;
+  font-size: 8vw;
 }
 
 body {
@@ -95,25 +95,29 @@ body {
   font-weight: 600;
 }
 
-#second-section {
+#even-section {
   position: relative;
   box-sizing: border-box;
 }
 
-#second-section .section-wrapper {
-  margin-top: 32px;
-  background-color: rgb(55, 61, 81);
+#even-section .section-starter {
+  margin-top: 40px;
   transform: skewY(-5deg);
+  background-color: rgb(55, 61, 81);
   height: 100px;
 }
 
-#second-section .contents {
+#even-section .contents {
   position: absolute;
   top: 40px;
   background-color: rgb(55, 61, 81);
 }
 
-#second-section .contents .title {
+#even-section .contents .sub-section {
+  margin-bottom: 32px;
+}
+
+#even-section .contents .sub-section .title {
   color: #fff;
   font-size: 0.9rem;
   font-family: Pretendard, Arial, sans-serif;
@@ -121,14 +125,14 @@ body {
   margin-bottom: 4px;
 }
 
-#second-section .contents .body {
+#even-section .contents .sub-section .body {
   color: #fff;
   font-size: 0.6rem;
   font-family: Pretendard, Arial, sans-serif;
   font-weight: 400;
 }
 
-#second-section .contents .map-image {
+#even-section .contents .sub-section .map-image {
   width: 80%;
   aspect-ratio: 1;
   background-color: gray;
@@ -136,14 +140,14 @@ body {
   margin-bottom: 4px;
 }
 
-#second-section .contents .comment-wrapper {
+#even-section .contents .sub-section .comment-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   width: 80%;
 }
 
-#second-section .contents .comment {
+#even-section .contents .sub-section .comment {
   font-size: 0.4rem;
   color: #fff;
 }
@@ -155,4 +159,28 @@ body {
   font-size: 0.5rem;
   padding: 0px 0px;
   margin-top: 12px;
+}
+
+.cardView {
+  margin-bottom: 20px;
+}
+
+.subtitleIcon {
+  font-size: 32px !important;
+  margin-right: 8px;
+}
+
+.cardView {
+  width: 80%;
+  background-color: #fff;
+  margin-top: 12px;
+  border-radius: 8px;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.cardView .cardText {
+  font-size: 0.6rem;
+  font-family: Pretendard, Arial, sans-serif;
+  font-weight: 600;
 }
